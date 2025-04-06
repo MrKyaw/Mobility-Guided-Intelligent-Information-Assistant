@@ -1,0 +1,15 @@
+
+# Python tooling
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+*.egg-info/
+.venv/
+__pycache__/
+*.pyc
+
+# Secrets
+.env
+*.env
+!.env.example

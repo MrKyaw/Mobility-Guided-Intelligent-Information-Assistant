@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mobility-guidance"
+version = "1.0.0"
+description = "Offline mobility scene narration and safety-guidance reports: explainable risk scoring, cooldown-aware speech selection, Markdown/HTML/JSON reporting."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Kyaw Kyaw Oo", email = "kyaw.tech@gmail.com" }]
+keywords = ["mobility", "safety", "accessibility", "narration", "scene-understanding", "risk-scoring", "reporting"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "pytest-cov>=5"]
+
+[project.scripts]
+mobility-guidance = "mobility_guidance.__main__:main"
+
+[tool.setuptools]
+packages = ["mobility_guidance"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-q --strict-markers"
+
+[tool.coverage.run]
+source = ["mobility_guidance"]
+branch = true
+
+[tool.coverage.report]
+show_missing = true
+fail_under = 100
