@@ -206,3 +206,8 @@ A previous revision committed `src/.env` with a Together API key. It has been re
 [GitHub](https://github.com/MrKyaw) · [Email](mailto:kyaw.tech@gmail.com)
 
 Licensed under the MIT License. See [license.txt](./license.txt).
+
+
+⭐ Star this repo if you find it useful!
+
+Report Bug · Request Feature · Ask Question
