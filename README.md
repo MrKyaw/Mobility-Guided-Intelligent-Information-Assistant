@@ -192,7 +192,7 @@ More: [ARCHITECTURE.md](./ARCHITECTURE.md) · [docs/DESIGN_DECISIONS.md](./docs/
 A previous revision committed `src/.env` with a Together API key. It has been removed and replaced with `src/.env.example`; `.env` is ignored. **Rotate that key.**
 
 ---\n
-## Recruiter snapshot
+## Reviewer snapshot
 
 - **Role fit:** ML platform, computer vision, accessibility, backend engineer.
 - **Signals:** multimodal systems thinking, explainable AI, test discipline, reporting, documentation.
